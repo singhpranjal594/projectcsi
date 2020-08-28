@@ -1,0 +1,192 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+ }
+
+ul {
+  list-style: none; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto',sans-serif;
+  color: #3f3c3d; }
+  body {
+    box-sizing: border-box;
+    position: relative; }
+  
+  a {
+    text-decoration: none; 
+}
+    .background {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-image: url(../images/background.png);
+        z-index: -1;
+        background-attachment: fixed;
+        background-size: cover; 
+    }
+        .background::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: black;
+          opacity: 0.4; 
+        }
+        .round1box{
+          width: 100%;
+            background: #fff;
+             box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+               position: relative;
+                 display: flex;
+                 margin-bottom: 5rem;
+           z-index: 10;
+        }
+.round1content{
+  padding: 2rem;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 15;
+
+}
+.round{
+    width: 100%;
+    background: #eeeeee;
+    padding: 5rem 8rem;
+}
+.round1image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.round1heading{
+    text-transform: uppercase;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 400;
+    font-size: 35px;
+}
+.round1para{
+  color: #737272;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+.round1listheading{
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.navbar{
+    font-size: 2.2rem;
+    position: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2000;
+    padding: 1rem 2rem;
+    width: 100%;
+    margin-top: 1rem; 
+}
+    .nav__logo {
+        letter-spacing: 3px;
+        height: 3rem; 
+    }
+    .nav__logo .csi {
+          text-decoration: none;
+          color: #fff;
+          font-family: 'Raleway',sans-serif;
+          font-weight: 600; 
+    }
+    .navcontent{
+            background:#fff;
+            box-sizing: 20px 20px;
+    }
+    .header{
+    display: flex;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+    }
+    .headercontent{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; 
+  }
+  .headerlogobox {
+    width: 22rem;
+    height: 22rem;
+    margin-top: 5rem;
+    opacity: 0.9;
+   }
+    .headerlogoboxicon {
+      width: 22rem;
+      height: 22rem;
+      transition: all 0.5s cubic-bezier(0.87, 0.03, 0.53, 0.6);
+     }
+      .headerlogoboxicon:hover {
+        transform: scale(1.1) rotate(720deg);
+       }
+        .headertextlogo{
+          width: 50%;
+          margin :2rem 0;
+        }
+        .headerbuttons{
+          display: flex;
+          align-items: center; }
+
+        
+        .btnheaderregister , .btnheaderquiz{
+          font-size: 1.5rem;
+          border: 2px solid white;
+          letter-spacing: 2px;
+          display: flex;
+          align-items: center;
+          border-radius: 100px;
+          padding:20px;
+          margin:0 20px;
+          color:#fff;
+          font-family: 'Raleway',sans-serif;
+          font-weight: 700;
+          transition: all 0.2s;
+           }
+           .btnheaderregister:hover , .btnheaderquiz:hover{
+             border: 4px solid #fff;
+             transform:scale(1.05,1.05) ;
+           }
+           .round1imgbox{
+            flex: 0 1 50%;
+            overflow: hidden;
+           }
+           .round1imgboximage{
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+           }
+           .r1{
+             background-image: url(../images/vintage.jpg);
+           }
+
