@@ -53,8 +53,8 @@ html {
            z-index: 10;
         }
 .round1content,.round3content{
-  padding: 2rem;
-  min-height: 30rem;
+  padding: 30px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -63,7 +63,7 @@ html {
 .round{
     width: 100%;
     background: #eeeeee;
-    padding: 5rem 8rem;
+    padding: 75px 100px;
 }
 .round1heading,.round3heading{
     text-transform: uppercase;
@@ -73,7 +73,7 @@ html {
 }
 .round1para,.round3para{
   color: #737272;
-  font-size: 1.8rem;
+  font-size: 20px;
   font-weight: 300;
   line-height: 35px;
 }
@@ -106,13 +106,13 @@ font-size: 25px;
     flex-direction: row;
     justify-content: space-between;
     z-index: 2000;
-    padding: 1rem 2rem;
+    padding: 15px 30px;
     width: 100%;
     margin-top: 1rem; 
 }
     .nav__logo {
         letter-spacing: 3px;
-        height: 3rem; 
+        height: 45px; 
     }
     .nav__logo .csi {
           text-decoration: none;
@@ -143,8 +143,8 @@ font-size: 25px;
     opacity: 0.9;
    }
     .headerlogoboxicon {
-      width: 22rem;
-      height: 22rem;
+      width: 220px;
+      height: 220px;
       transition: all 0.5s cubic-bezier(0.87, 0.03, 0.53, 0.6);
      }
       .headerlogoboxicon:hover {
@@ -187,9 +187,9 @@ font-size: 25px;
 }
 .round1button,.round2button,.round3button{
   border-radius: 3px;
-    font-size: 1.5rem;
+    font-size: 18px;
     font-weight: 400;
-    padding: 1.2rem 2rem;
+    padding: 15px 25px;
     background: transparent;
     border: 1px solid #004d40;
     transition: all 0.1s;
@@ -211,7 +211,7 @@ font-size: 25px;
     overflow: hidden;
        position: relative;
          display: flex;
-         margin-bottom: 5rem;
+         margin-bottom: 60px;
    z-index: 10;
 }
 .round2content{
