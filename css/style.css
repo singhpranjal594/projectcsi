@@ -42,7 +42,7 @@ html {
           background: black;
           opacity: 0.4; 
         }
-        .round1box{
+        .round1box,.round3box{
           width: 100%;
             background: #fff;
              box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
@@ -52,48 +52,54 @@ html {
                  margin-bottom: 5rem;
            z-index: 10;
         }
-.round1content{
+.round1content,.round3content{
   padding: 2rem;
   min-height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   z-index: 15;
-
 }
 .round{
     width: 100%;
     background: #eeeeee;
     padding: 5rem 8rem;
 }
-.round1image::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  z-index: 11;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.round1heading{
+.round1heading,.round3heading{
     text-transform: uppercase;
     border-bottom: 1px solid #e0e0e0;
     font-weight: 400;
     font-size: 35px;
 }
-.round1para{
+.round1para,.round3para{
   color: #737272;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 3rem;
+  line-height: 35px;
 }
-.round1listheading{
-  margin-top: 1rem;
-  font-size: 2rem;
+.round1listheading,.round3listheading{
+  margin-top: 12px;
+font-size: 25px;
   font-weight: 400;
 }
+.round1imgbox,.round3imgbox{
+  flex: 0 1 50%;
+  overflow: hidden;
+ }
+ .round1imgboximage,.round3imgboximage{
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .r1{
+   background-image: url(../images/vintage.jpg);
+ }
+
+ 
 .navbar{
-    font-size: 2.2rem;
+    font-size: 30px;
     position: fixed;
     color: #fff;
     display: flex;
@@ -113,10 +119,6 @@ html {
           color: #fff;
           font-family: 'Raleway',sans-serif;
           font-weight: 600; 
-    }
-    .navcontent{
-            background:#fff;
-            box-sizing: 20px 20px;
     }
     .header{
     display: flex;
@@ -173,20 +175,216 @@ html {
            }
            .btnheaderregister:hover , .btnheaderquiz:hover{
              border: 4px solid #fff;
-             transform:scale(1.05,1.05) ;
+             transform:translateX(5px) ;
            }
-           .round1imgbox{
-            flex: 0 1 50%;
-            overflow: hidden;
-           }
-           .round1imgboximage{
-            width: 100%;
-            height: 100%;
-            clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
-            background-repeat: no-repeat;
-            background-size: cover;
-           }
-           .r1{
-             background-image: url(../images/vintage.jpg);
-           }
+           
+.button{
+  padding: 3px 5px;
+  color: #fff;
+  border: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.round1button,.round2button,.round3button{
+  border-radius: 3px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1.2rem 2rem;
+    background: transparent;
+    border: 1px solid #004d40;
+    transition: all 0.1s;
+    color: #004d40;
+    letter-spacing: 1px;
+    text-decoration: none; 
+    width:fit-content;
+}
+.round1button:hover,.round2button:hover,.round3button:hover{
+  background:#004d40;
+  color:white;
+  box-shadow: 0 16px 20px rgba(0,0,0,0.2);
+}
 
+.round2box{
+  width: 100%;
+    background: #fff;
+     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+       position: relative;
+         display: flex;
+         margin-bottom: 5rem;
+   z-index: 10;
+}
+.round2content{
+  padding: 2rem;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 15;
+}
+.round2heading{
+  text-transform: uppercase;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 400;
+  font-size: 35px;
+}
+.round2para{
+color: #737272;
+font-size: 1.8rem;
+font-weight: 300;
+line-height: 35px;
+}
+.round2listheading{
+margin-top: 12px;
+font-size: 25px;
+font-weight: 400;
+}
+.round2imgbox{
+  flex: 0 1 50%;
+ }
+ .round2imgboximage{
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+.r2{
+  background-image: url(../images/quiz.jpg);
+}
+
+.r3{
+  background-image: url(/images/magic.jpg);
+}
+.footer{
+  height:180px;
+  background: #004d40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.footericons{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    z-index: 15;
+}
+.footericons a{
+  margin:10px;
+  transition: all 0.2s;
+}
+.footericons a:hover{
+  transform:rotate(10deg);
+}
+.footer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+ background-size: cover;
+ position: absolute;
+  background-image:url(../images/footer.png);
+  animation: animate 15s infinite; 
+background-blend-mode: color;
+}
+.footercopy{
+  color: #eeeeee;
+  font-size: 20px;
+  background: #004d40;
+  padding: 10px 0;
+  margin-top: auto;
+  text-align: center;
+  z-index: 10; 
+  width: 100%;
+}
+
+@keyframes animate {
+0% {
+  transform: scale(1); }
+50% {
+  transform: scale(2); }
+100% {
+  transform: scale(1); } }
+  .toggler{
+    position: absolute;
+    top: 0;
+    right: 1%;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  .hamburger {
+    position: absolute;
+    top: 0;
+    right: 1%;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .toggler:hover{
+    cursor:pointer;
+  }
+  .hamburger > div{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background:#3f3c3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .hamburger > div::after,
+  .hamburger > div::before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: #3f3c3d;
+  }
+  .hamburger > div::after{
+    top:10px;
+  }
+  .toggler:checked + .hamburger>div{
+    transform:rotate(135deg);
+  }
+  .toggler:checked + .hamburger > div::after,
+  .toggler:checked+ .hamburger > div::before{
+    top:0;
+    transform:rotate(90deg);
+  }
+  .menu{
+    visibility:hidden;
+    margin-right: 1.5%;
+  }
+  .toggler:checked ~.menu{
+    visibility: visible;
+  }
+  .box1,.box2,.box3{
+    margin-top: 5px;
+    background: black;
+    opacity: 0.7;
+    padding:10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 2px;
+    z-index: 300;
+    text-decoration:none;
+  }
+  .menu a{
+    color:#fff;
+    text-decoration: none;
+  }
